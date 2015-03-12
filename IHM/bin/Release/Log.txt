@@ -1,0 +1,234 @@
+[Information] 28/02/2015 - 11:25 :
+Application is starting
+-------------------
+
+
+[Information] 28/02/2015 - 11:39 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:22 :
+Application is starting
+-------------------
+
+
+[Information] 05/03/2015 - 22:22 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:23 :
+Nouvelle équipe ajoutée : Equipe 1
+-------------------
+
+
+[Information] 05/03/2015 - 22:23 :
+Concours sauvegardé.
+-------------------
+
+
+[Error] ERROR OCCURS : Une exception de type 'System.Exception' a été levée.
+[Date] 05/03/2015 - 22:23 
+[Details]
+   à BLL.Competition.AddNewTeam(Team team) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\Competition.cs:ligne 186
+   à IHM.Pages.TeamsEditionView.AddTeamBtn_Click(Object sender, EventArgs e) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\Views\CompoEquipes.cs:ligne 49 : Une exception de type 'System.Exception' a été levée.
+------------------- 
+
+
+[Information] 05/03/2015 - 22:24 :
+Application is starting
+-------------------
+
+
+[Information] 05/03/2015 - 22:24 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:24 :
+Nouvelle équipe ajoutée : Equipe 1
+-------------------
+
+
+[Information] 05/03/2015 - 22:24 :
+Concours sauvegardé.
+-------------------
+
+
+[Error] ERROR OCCURS : Une exception de type 'System.Exception' a été levée.
+[Date] 05/03/2015 - 22:24 
+[Details]
+   à BLL.Competition.AddNewTeam(Team team) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\Competition.cs:ligne 186
+   à IHM.Pages.TeamsEditionView.AddTeamBtn_Click(Object sender, EventArgs e) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\Views\CompoEquipes.cs:ligne 49 : Une exception de type 'System.Exception' a été levée.
+------------------- 
+
+
+[Information] 05/03/2015 - 22:27 :
+Application is starting
+-------------------
+
+
+[Information] 05/03/2015 - 22:28 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:28 :
+Nouvelle équipe ajoutée : Equipe 1
+-------------------
+
+
+[Information] 05/03/2015 - 22:28 :
+Concours sauvegardé.
+-------------------
+
+
+[Error] ERROR OCCURS : Une exception de type 'System.Exception' a été levée.
+[Date] 05/03/2015 - 22:28 
+[Details]
+   à BLL.Competition.AddNewTeam(Team team) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\Competition.cs:ligne 186
+   à IHM.Pages.TeamsEditionView.AddTeamBtn_Click(Object sender, EventArgs e) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\Views\CompoEquipes.cs:ligne 49 : Une exception de type 'System.Exception' a été levée.
+------------------- 
+
+
+[Information] 05/03/2015 - 22:28 :
+Application is starting
+-------------------
+
+
+[Information] 05/03/2015 - 22:28 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:28 :
+Nouvelle équipe ajoutée : Equipe 1
+-------------------
+
+
+[Information] 05/03/2015 - 22:28 :
+Concours sauvegardé.
+-------------------
+
+
+[Error] ERROR OCCURS : Une exception de type 'System.Exception' a été levée.
+[Date] 05/03/2015 - 22:29 
+[Details]
+   à BLL.Competition.AddNewTeam(Team team) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\Competition.cs:ligne 186
+   à IHM.Pages.TeamsEditionView.AddTeamBtn_Click(Object sender, EventArgs e) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\Views\CompoEquipes.cs:ligne 49 : Une exception de type 'System.Exception' a été levée.
+------------------- 
+
+
+[Information] 05/03/2015 - 22:29 :
+Application is starting
+-------------------
+
+
+[Information] 05/03/2015 - 22:29 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:29 :
+Nouvelle équipe ajoutée : Equipe 1
+-------------------
+
+
+[Information] 05/03/2015 - 22:29 :
+Concours sauvegardé.
+-------------------
+
+
+[Error] ERROR OCCURS : Une exception de type 'System.Exception' a été levée.
+[Date] 05/03/2015 - 22:29 
+[Details]
+   à BLL.Competition.AddNewTeam(Team team) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\Competition.cs:ligne 186
+   à IHM.Pages.TeamsEditionView.AddTeamBtn_Click(Object sender, EventArgs e) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\Views\CompoEquipes.cs:ligne 49 : Une exception de type 'System.Exception' a été levée.
+------------------- 
+
+
+[Information] 05/03/2015 - 22:30 :
+Application is starting
+-------------------
+
+
+[Information] 05/03/2015 - 22:30 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:30 :
+Nouvelle équipe ajoutée : Equipe 1
+-------------------
+
+
+[Information] 05/03/2015 - 22:30 :
+Concours sauvegardé.
+-------------------
+
+
+[Error] ERROR OCCURS : Une exception de type 'System.Exception' a été levée.
+[Date] 05/03/2015 - 22:30 
+[Details]
+   à BLL.Competition.AddNewTeam(Team team) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\Competition.cs:ligne 186
+   à IHM.Pages.TeamsEditionView.AddTeamBtn_Click(Object sender, EventArgs e) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\Views\CompoEquipes.cs:ligne 49 : Une exception de type 'System.Exception' a été levée.
+------------------- 
+
+
+[Information] 05/03/2015 - 22:31 :
+Application is starting
+-------------------
+
+
+[Information] 05/03/2015 - 22:31 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:31 :
+Nouvelle équipe ajoutée : Equipe 1
+-------------------
+
+
+[Information] 05/03/2015 - 22:31 :
+Concours sauvegardé.
+-------------------
+
+
+[Error] ERROR OCCURS : Une exception de type 'System.Exception' a été levée.
+[Date] 05/03/2015 - 22:31 
+[Details]
+   à BLL.Competition.AddNewTeam(Team team) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\Competition.cs:ligne 186
+   à IHM.Pages.TeamsEditionView.AddTeamBtn_Click(Object sender, EventArgs e) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\Views\CompoEquipes.cs:ligne 49 : Une exception de type 'System.Exception' a été levée.
+------------------- 
+
+
+[Information] 05/03/2015 - 22:32 :
+Application is starting
+-------------------
+
+
+[Information] 05/03/2015 - 22:32 :
+Concours sauvegardé.
+-------------------
+
+
+[Information] 05/03/2015 - 22:32 :
+Nouvelle équipe ajoutée : Equipe 1
+-------------------
+
+
+[Information] 05/03/2015 - 22:32 :
+Concours sauvegardé.
+-------------------
+
+
+[Error] ERROR OCCURS : Une exception de type 'System.Exception' a été levée.
+[Date] 05/03/2015 - 22:32 
+[Details]
+   à BLL.Competition.AddNewTeam(Team team) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\Competition.cs:ligne 186
+   à IHM.Pages.TeamsEditionView.AddTeamBtn_Click(Object sender, EventArgs e) dans c:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\Views\CompoEquipes.cs:ligne 49 : Une exception de type 'System.Exception' a été levée.
+------------------- 
+
+

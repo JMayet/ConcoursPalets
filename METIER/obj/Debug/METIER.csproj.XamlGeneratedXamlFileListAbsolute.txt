@@ -1,0 +1,2 @@
+obj\Debug\WorkflowConcours.g.xaml
+obj\Debug\METIER_WorkflowConcours_BeforeInitializeComponentHelper.txt

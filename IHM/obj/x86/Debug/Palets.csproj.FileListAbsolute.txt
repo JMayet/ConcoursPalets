@@ -1,0 +1,42 @@
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.DetailClassement.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.EditSettings.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.TeamEdition.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Form.MainForm.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Pages.Bandeau.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Pages.RankingView.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Pages.TeamsEditionView.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Pages.RoundView.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Pages.Field.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Pages.Terrains.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Pages.Titre.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Properties.Resources.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.StartView.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.CustomMessageBox.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.ScoreEdition.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.DetailClassement.fr.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.EditSettings.fr.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.TeamEdition.fr.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\IHM.Form.MainForm.fr.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\Palets.csproj.GenerateResource.Cache
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\Palets.csprojResolveAssemblyReference.cache
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Concours de palets.exe.config
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Concours de palets.exe.manifest
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Concours de palets.application
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Concours de palets.exe
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Concours de palets.pdb
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\fr\Concours de palets.resources.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\METIER.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\DAL.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\METIER.pdb
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\bin\Debug\DAL.pdb
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\fr\Concours de palets.resources.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\Concours de palets.exe.manifest
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\Concours de palets.application
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\Concours de palets.exe
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\IHM\obj\x86\Debug\Concours de palets.pdb

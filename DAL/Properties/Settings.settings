@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DAL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CompletedCompetitonDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CompletedCompetitionBackup</Value>
+    </Setting>
+    <Setting Name="LoggingSource" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Log.txt</Value>
+    </Setting>
+    <Setting Name="CompetitionInProgress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CompetitionInProgress.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

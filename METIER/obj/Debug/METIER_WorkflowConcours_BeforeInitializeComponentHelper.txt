@@ -1,0 +1,2 @@
+WorkflowConcours.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

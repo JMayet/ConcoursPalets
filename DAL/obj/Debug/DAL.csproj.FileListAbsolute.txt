@@ -1,0 +1,10 @@
+c:\Users\Jérémy\documents\visual studio 2013\Projects\IHM\DAL\bin\Debug\DAL.dll
+c:\Users\Jérémy\documents\visual studio 2013\Projects\IHM\DAL\bin\Debug\DAL.pdb
+c:\Users\Jérémy\documents\visual studio 2013\Projects\IHM\DAL\obj\Debug\DAL.dll
+c:\Users\Jérémy\documents\visual studio 2013\Projects\IHM\DAL\obj\Debug\DAL.pdb
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\DAL\bin\Debug\DAL.dll.config
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\DAL\bin\Debug\DAL.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\DAL\bin\Debug\DAL.pdb
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\DAL\obj\Debug\DAL.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\DAL\obj\Debug\DAL.pdb
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

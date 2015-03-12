@@ -1,0 +1,10 @@
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\bin\Release\METIER.dll.config
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\bin\Release\METIER.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\bin\Release\METIER.pdb
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\bin\Release\DAL.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\bin\Release\DAL.pdb
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\obj\Release\BLL.Properties.Resources.resources
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\obj\Release\BLL.csproj.GenerateResource.Cache
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\obj\Release\METIER.dll
+C:\Users\Jérémy\Google Drive\VS\ConcoursDePalets\IHM\METIER\obj\Release\METIER.pdb

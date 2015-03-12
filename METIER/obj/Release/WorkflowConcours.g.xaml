@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<local:WorkflowConcours xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:local="clr-namespace:METIER;assembly=METIER" xmlns:local1="clr-namespace:;assembly=METIER" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>METIER</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Activities.Build</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Activities.DurableInstancing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.IO.Compression</AssemblyReference>
+      <AssemblyReference>System.IO.Compression.FileSystem</AssemblyReference>
+      <AssemblyReference>System.IO.Log</AssemblyReference>
+      <AssemblyReference>System.Runtime.DurableInstancing</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Workflow.Activities</AssemblyReference>
+      <AssemblyReference>System.Workflow.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Workflow.Runtime</AssemblyReference>
+      <AssemblyReference>System.WorkflowServices</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>XamlBuildTask</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>METIER</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <local:WorkflowConcours.Implementation>
+    <StateMachine>
+      <StateMachine.InitialState>
+        <State x:Name="__ReferenceID2" DisplayName="Configuration">
+          <State.Entry>
+            <Sequence>
+              <Persist />
+              <InvokeMethod MethodName="UpdateWorkflowState">
+                <InvokeMethod.TargetObject>
+                  <InArgument x:TypeArguments="local:Concours">
+                    <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                  </InArgument>
+                </InvokeMethod.TargetObject>
+                <InArgument x:TypeArguments="local1:WorkflowState">
+                  <mca:CSharpValue x:TypeArguments="local1:WorkflowState">WorkflowState.Config</mca:CSharpValue>
+                </InArgument>
+              </InvokeMethod>
+              <Persist />
+              <InvokeMethod MethodName="RaiseChangerVue">
+                <InvokeMethod.TargetObject>
+                  <InArgument x:TypeArguments="local:Concours">
+                    <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                  </InArgument>
+                </InvokeMethod.TargetObject>
+                <InArgument x:TypeArguments="local1:Vues">
+                  <mca:CSharpValue x:TypeArguments="local1:Vues">Vues.Configuration</mca:CSharpValue>
+                </InArgument>
+              </InvokeMethod>
+              <DoWhile>
+                <DoWhile.Condition>
+                  <mca:CSharpValue x:TypeArguments="x:Boolean">!Suivant</mca:CSharpValue>
+                </DoWhile.Condition>
+                <Sequence>
+                  <Persist />
+                  <Pick>
+                    <PickBranch DisplayName="Branch1">
+                      <PickBranch.Trigger>
+                        <local:EventTrigger ConfigParam="{x:Null}" ScoreParam="{x:Null}" BookmarkName="EquipeAdded">
+                          <local:EventTrigger.EquipeParam>
+                            <OutArgument x:TypeArguments="local:Equipe">
+                              <mca:CSharpReference x:TypeArguments="local:Equipe">Equipe</mca:CSharpReference>
+                            </OutArgument>
+                          </local:EventTrigger.EquipeParam>
+                        </local:EventTrigger>
+                      </PickBranch.Trigger>
+                      <Sequence>
+                        <InvokeMethod MethodName="AjouterEquipe">
+                          <InvokeMethod.TargetObject>
+                            <InArgument x:TypeArguments="local:Concours">
+                              <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                            </InArgument>
+                          </InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="local:Equipe">
+                            <mca:CSharpValue x:TypeArguments="local:Equipe">Equipe</mca:CSharpValue>
+                          </InArgument>
+                        </InvokeMethod>
+                      </Sequence>
+                    </PickBranch>
+                    <PickBranch DisplayName="Branch2">
+                      <PickBranch.Trigger>
+                        <local:EventTrigger EquipeParam="{x:Null}" ScoreParam="{x:Null}" BookmarkName="ConfigFinished">
+                          <local:EventTrigger.ConfigParam>
+                            <OutArgument x:TypeArguments="scg:List(x:Int32)">
+                              <mca:CSharpReference x:TypeArguments="scg:List(x:Int32)">Config</mca:CSharpReference>
+                            </OutArgument>
+                          </local:EventTrigger.ConfigParam>
+                        </local:EventTrigger>
+                      </PickBranch.Trigger>
+                      <Sequence>
+                        <Assign>
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">
+                              <mca:CSharpReference x:TypeArguments="x:Int32">NbMatchsAleatoires</mca:CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <mca:CSharpValue x:TypeArguments="x:Int32">Config[1]</mca:CSharpValue>
+                            </InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign>
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">
+                              <mca:CSharpReference x:TypeArguments="x:Int32">NbMatchsClassement</mca:CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <mca:CSharpValue x:TypeArguments="x:Int32">Config[2]</mca:CSharpValue>
+                            </InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <InvokeMethod MethodName="SetNombreManches">
+                          <InvokeMethod.TargetObject>
+                            <InArgument x:TypeArguments="local:Concours">
+                              <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                            </InArgument>
+                          </InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="x:Int32">
+                            <mca:CSharpValue x:TypeArguments="x:Int32">Config[1]</mca:CSharpValue>
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:Int32">
+                            <mca:CSharpValue x:TypeArguments="x:Int32">Config[2]</mca:CSharpValue>
+                          </InArgument>
+                        </InvokeMethod>
+                        <Assign>
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">
+                              <mca:CSharpReference x:TypeArguments="x:Boolean">Suivant</mca:CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </PickBranch>
+                    <PickBranch>
+                      <PickBranch.Trigger>
+                        <local:EventTrigger ConfigParam="{x:Null}" EquipeParam="{x:Null}" ScoreParam="{x:Null}" BookmarkName="EquipeDeleted">
+                          <local:EventTrigger.Result>
+                            <OutArgument x:TypeArguments="x:String">
+                              <mca:CSharpReference x:TypeArguments="x:String">EquipeDeleted</mca:CSharpReference>
+                            </OutArgument>
+                          </local:EventTrigger.Result>
+                        </local:EventTrigger>
+                      </PickBranch.Trigger>
+                      <InvokeMethod MethodName="SupprimerEquipe">
+                        <InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="local:Concours">
+                            <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                          </InArgument>
+                        </InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String">EquipeDeleted</mca:CSharpValue>
+                        </InArgument>
+                      </InvokeMethod>
+                    </PickBranch>
+                  </Pick>
+                </Sequence>
+              </DoWhile>
+            </Sequence>
+          </State.Entry>
+          <State.Exit>
+            <Persist />
+          </State.Exit>
+          <State.Transitions>
+            <Transition DisplayName="ConfigFinished">
+              <Transition.To>
+                <State x:Name="__ReferenceID0" DisplayName="TirageAuSort">
+                  <State.Entry>
+                    <Sequence>
+                      <Persist />
+                      <InvokeMethod MethodName="UpdateWorkflowState">
+                        <InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="local:Concours">
+                            <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                          </InArgument>
+                        </InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="local1:WorkflowState">
+                          <mca:CSharpValue x:TypeArguments="local1:WorkflowState">WorkflowState.TirageMatchsSuivants</mca:CSharpValue>
+                        </InArgument>
+                      </InvokeMethod>
+                      <Persist />
+                      <If>
+                        <If.Condition>
+                          <InArgument x:TypeArguments="x:Boolean">
+                            <mca:CSharpValue x:TypeArguments="x:Boolean">Concours.GetCurrentConcours().Manches.Count&lt;NbMatchsAleatoires</mca:CSharpValue>
+                          </InArgument>
+                        </If.Condition>
+                        <If.Then>
+                          <InvokeMethod MethodName="DemarrerNouvelleMancheAleatoire">
+                            <InvokeMethod.TargetObject>
+                              <InArgument x:TypeArguments="local:Concours">
+                                <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                              </InArgument>
+                            </InvokeMethod.TargetObject>
+                          </InvokeMethod>
+                        </If.Then>
+                        <If.Else>
+                          <InvokeMethod MethodName="DemarrerNouvelleMancheClassement">
+                            <InvokeMethod.TargetObject>
+                              <InArgument x:TypeArguments="local:Concours">
+                                <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                              </InArgument>
+                            </InvokeMethod.TargetObject>
+                          </InvokeMethod>
+                        </If.Else>
+                      </If>
+                      <InvokeMethod MethodName="RaiseChangerVue">
+                        <InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="local:Concours">
+                            <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                          </InArgument>
+                        </InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="local1:Vues">
+                          <mca:CSharpValue x:TypeArguments="local1:Vues">Vues.Match</mca:CSharpValue>
+                        </InArgument>
+                      </InvokeMethod>
+                      <Persist />
+                      <local:EventTrigger ConfigParam="{x:Null}" EquipeParam="{x:Null}" ScoreParam="{x:Null}" BookmarkName="TirageMatchsSuivants" />
+                      <Persist />
+                      <InvokeMethod MethodName="TirrageMatchsSuivants">
+                        <InvokeMethod.TargetObject>
+                          <InArgument x:TypeArguments="local:Concours">
+                            <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                          </InArgument>
+                        </InvokeMethod.TargetObject>
+                      </InvokeMethod>
+                    </Sequence>
+                  </State.Entry>
+                  <State.Exit>
+                    <Persist />
+                  </State.Exit>
+                  <State.Transitions>
+                    <Transition DisplayName="TirageAleatoireDone">
+                      <Transition.To>
+                        <State x:Name="__ReferenceID4" DisplayName="MatchAleatoire">
+                          <State.Entry>
+                            <Sequence>
+                              <Persist />
+                              <InvokeMethod MethodName="UpdateWorkflowState">
+                                <InvokeMethod.TargetObject>
+                                  <InArgument x:TypeArguments="local:Concours">
+                                    <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                                  </InArgument>
+                                </InvokeMethod.TargetObject>
+                                <InArgument x:TypeArguments="local1:WorkflowState">
+                                  <mca:CSharpValue x:TypeArguments="local1:WorkflowState">WorkflowState.Match</mca:CSharpValue>
+                                </InArgument>
+                              </InvokeMethod>
+                              <InvokeMethod MethodName="RaiseTirrageDone">
+                                <InvokeMethod.TargetObject>
+                                  <InArgument x:TypeArguments="local:Manche">
+                                    <mca:CSharpValue x:TypeArguments="local:Manche">Concours.GetCurrentConcours().GetCurrentManche()</mca:CSharpValue>
+                                  </InArgument>
+                                </InvokeMethod.TargetObject>
+                              </InvokeMethod>
+                              <DoWhile>
+                                <DoWhile.Condition>
+                                  <mca:CSharpValue x:TypeArguments="x:Boolean">!Concours.GetCurrentConcours().GetCurrentManche().AreAllMatchsDone();</mca:CSharpValue>
+                                </DoWhile.Condition>
+                                <Sequence>
+                                  <Persist />
+                                  <Pick>
+                                    <PickBranch>
+                                      <PickBranch.Variables>
+                                        <Variable x:TypeArguments="scg:List(x:Int32)" Name="Score" />
+                                      </PickBranch.Variables>
+                                      <PickBranch.Trigger>
+                                        <local:EventTrigger ConfigParam="{x:Null}" EquipeParam="{x:Null}" BookmarkName="SetScore">
+                                          <local:EventTrigger.ScoreParam>
+                                            <OutArgument x:TypeArguments="scg:List(x:Int32)">
+                                              <mca:CSharpReference x:TypeArguments="scg:List(x:Int32)">Score</mca:CSharpReference>
+                                            </OutArgument>
+                                          </local:EventTrigger.ScoreParam>
+                                        </local:EventTrigger>
+                                      </PickBranch.Trigger>
+                                      <Sequence>
+                                        <InvokeMethod MethodName="SetScore">
+                                          <InvokeMethod.TargetObject>
+                                            <InArgument x:TypeArguments="local:Manche">
+                                              <mca:CSharpValue x:TypeArguments="local:Manche">Concours.GetCurrentConcours().GetCurrentManche()</mca:CSharpValue>
+                                            </InArgument>
+                                          </InvokeMethod.TargetObject>
+                                          <InArgument x:TypeArguments="x:Int32">
+                                            <mca:CSharpValue x:TypeArguments="x:Int32">Score[0]</mca:CSharpValue>
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:Int32">
+                                            <mca:CSharpValue x:TypeArguments="x:Int32">Score[1]</mca:CSharpValue>
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:Int32">
+                                            <mca:CSharpValue x:TypeArguments="x:Int32">Score[2]</mca:CSharpValue>
+                                          </InArgument>
+                                        </InvokeMethod>
+                                      </Sequence>
+                                    </PickBranch>
+                                  </Pick>
+                                </Sequence>
+                              </DoWhile>
+                              <Persist />
+                              <InvokeMethod MethodName="RaiseManchefinished">
+                                <InvokeMethod.TargetObject>
+                                  <InArgument x:TypeArguments="local:Manche">
+                                    <mca:CSharpValue x:TypeArguments="local:Manche">Concours.GetCurrentConcours().GetCurrentManche()</mca:CSharpValue>
+                                  </InArgument>
+                                </InvokeMethod.TargetObject>
+                              </InvokeMethod>
+                              <Persist />
+                            </Sequence>
+                          </State.Entry>
+                          <State.Exit>
+                            <Sequence>
+                              <Persist />
+                              <InvokeMethod MethodName="UpdateManche">
+                                <InvokeMethod.TargetObject>
+                                  <InArgument x:TypeArguments="local:Manche">
+                                    <mca:CSharpValue x:TypeArguments="local:Manche">Concours.GetCurrentConcours().GetCurrentManche()</mca:CSharpValue>
+                                  </InArgument>
+                                </InvokeMethod.TargetObject>
+                              </InvokeMethod>
+                              <Persist />
+                            </Sequence>
+                          </State.Exit>
+                          <State.Transitions>
+                            <Transition DisplayName="NextMatchAleatoire">
+                              <Transition.Trigger>
+                                <local:EventTrigger x:Name="__ReferenceID1" ConfigParam="{x:Null}" EquipeParam="{x:Null}" ScoreParam="{x:Null}" BookmarkName="Next" />
+                              </Transition.Trigger>
+                              <Transition.To>
+                                <x:Reference>__ReferenceID0</x:Reference>
+                              </Transition.To>
+                              <Transition.Condition>
+                                <mca:CSharpValue x:TypeArguments="x:Boolean">Concours.GetCurrentConcours().Manches.Count &lt; (NbMatchsAleatoires + NbMatchsClassement)</mca:CSharpValue>
+                              </Transition.Condition>
+                            </Transition>
+                            <Transition Trigger="{x:Reference __ReferenceID1}" DisplayName="T3">
+                              <Transition.Condition>
+                                <mca:CSharpValue x:TypeArguments="x:Boolean">!(Concours.GetCurrentConcours().Manches.Count &lt; (NbMatchsAleatoires + NbMatchsClassement))</mca:CSharpValue>
+                              </Transition.Condition>
+                              <Transition.To>
+                                <State x:Name="__ReferenceID3" DisplayName="FinalState" IsFinal="True">
+                                  <State.Entry>
+                                    <InvokeMethod MethodName="RaiseChangerVue">
+                                      <InvokeMethod.TargetObject>
+                                        <InArgument x:TypeArguments="local:Concours">
+                                          <mca:CSharpValue x:TypeArguments="local:Concours">Concours.GetCurrentConcours()</mca:CSharpValue>
+                                        </InArgument>
+                                      </InvokeMethod.TargetObject>
+                                      <InArgument x:TypeArguments="local1:Vues">
+                                        <mca:CSharpValue x:TypeArguments="local1:Vues">Vues.Classement</mca:CSharpValue>
+                                      </InArgument>
+                                    </InvokeMethod>
+                                  </State.Entry>
+                                </State>
+                              </Transition.To>
+                            </Transition>
+                          </State.Transitions>
+                        </State>
+                      </Transition.To>
+                    </Transition>
+                  </State.Transitions>
+                </State>
+              </Transition.To>
+            </Transition>
+          </State.Transitions>
+          <State.Variables>
+            <Variable x:TypeArguments="scg:List(x:Int32)" Name="Config" />
+            <Variable x:TypeArguments="local:Equipe" Name="Equipe" />
+            <Variable x:TypeArguments="x:Boolean" Default="False" Name="Suivant" />
+            <Variable x:TypeArguments="x:String" Name="EquipeDeleted" />
+          </State.Variables>
+        </State>
+      </StateMachine.InitialState>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID0</x:Reference>
+      <StateMachine.Variables>
+        <Variable x:TypeArguments="x:Int32" Default="2" Name="NbMatchsAleatoires" />
+        <Variable x:TypeArguments="x:Int32" Default="4" Name="NbMatchsClassement" />
+      </StateMachine.Variables>
+      <sads:DebugSymbol.Symbol>9xBR/QUqL6n1Dk0P9KqCsCY8U0M6XFVzZXJzXErDqXLDqW15XEdvb2dsZSBEcml2ZVxWU1xDb25jb3Vyc0RlUGFsZXRzXElITVxNRVRJRVJcV29ya2Zsb3dDb25jb3Vycy54YW1sdDUDoAMSAgEBnAMznAM2AwGlAp0DM50DNgMBpAI3B5UDDwIBePYCH4MDJwIBb44CF4cDHwIBK8oBD4sDFwIBApIDOZIDQAIBeTkLwgEWAgF9xQELxQFCAgF8+AIjgQMyAgFxkAIb1gImAgE82QIb4wImAgE16AIf6ALWAQIBM+4CH+4CuAECATDzAh/zArsBAgEtzAEThgIeAgEGiQITiQJKAgEFOg06RQMBowI7DUQcAwGUAkUNRUUDAZMCRg1PHAMBhAJQDcEBFwIBfv8CJ/8CdwIBdfsCKfsCigECAXKRAh2RAlUCAW6SAh2bAiwCAWecAh2iAiwCAWOjAh3MAicCAUPNAh3NAlUCAULOAh3UAiwCAT7VAh3VAlUCAT3aAh3aAlQCATvbAh3hAiwCATfiAh3iAlUCATboApwB6AKiAQIBNM0BFc0BTAIBKs4BFdcBJAIBI9gBFdgBTQIBItkBFfEBGgIBFvIBFfsBJAIBD/wBFfwBTQIBDv0BFf0BxQECAQz+ARX+AU0CAQv/ARWFAiQCAQdCEUJvAwGcAj4TPnQDAZUCTRFNZAMBjAJJE0l0AwGFAlIRUlgDAf0BVA/AARoCAX+ZAiGZAn4CAWuVAiOVAoQBAgFonwIjnwKVAQIBZKUCIaUCpQECAWCnAh/LAioCAUTRAiPRApUBAgE/3gIj3gKVAQIBONUBGdUBhQECASfRARvRAXwCASTcARvcAZsBAgEX4AEZ5gEoAgEe6QEZ7wEoAgEa+QEZ+QFkAgET9QEb9QF8AgEQ/QF6/QGQAQIBDYICG4ICfAIBCFURVUgDAfwBVhG/ARgDAYABqAIhqAJYAgFfqQIhygIoAgFF4wEf4wGAAQIBH+wBH+wBgAECARtXE20gAwHiAW4TqQEgAwGaAaoBE74BIAMBgQGqAiPJAjACAUZZF18sAwHzAWEVbCADAeMBcBd2LAMB2QF4FagBIAMBmwGsAReyASwDAZEBtAEVvQEkAwGCAa8CJ7UCPAIBWbcCJcgCMAIBR1llWXIDAfsBXB1cbQMB9AFiF2smAwHkAXBlcHUDAeEBcx1zcgMB2gF5F4QBIAMBygGFAReQASADAbsBkQEXnQEmAwGlAZ4BF6cBIAMBnAGsAXysAYsBAwGZAa8BHa8BcAMBkgG7ARm7AWQDAYoBtwEbtwF8AwGDAa8Cdq8CgAECAV6yAi2yAoEBAgFauAInxwI2AgFIaRtpYwMB7AFlHWV+AwHlAYEBHYEBYwMB0gF8HXx0AwHLAY0BHY0BYwMBwwGIAR2IAXQDAbwBmwEbmwFhAwG0AZQBHZQBfgMBrQGYARuYAWEDAaYBpQFDpQFHAwGkAaEBHaEBawMBnQHFAivFAnACAVXCAivCAnACAVG7Ai27Ap8BAgFNvwIrvwJwAgFJ</sads:DebugSymbol.Symbol>
+    </StateMachine>
+  </local:WorkflowConcours.Implementation>
+</local:WorkflowConcours>
